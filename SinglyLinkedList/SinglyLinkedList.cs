@@ -154,7 +154,7 @@ namespace Singly
 
         public T? Get(int idx)
         {
-            DoublyNode<T>? current = head;
+            SinglyNode<T>? current = head;
 
             for (int i = 0; i < idx; i++)
             {
