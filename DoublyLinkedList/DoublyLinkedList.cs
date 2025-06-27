@@ -173,6 +173,12 @@ namespace Doubly
 
         public T? Get(int idx)
         {
+            if (idx < 0 || idx >= count)
+            {
+                Console.WriteLine("유효하지 않은 인덱스입니다.");
+                return default!;
+            } 
+            
             DoublyNode<T>? current = head;
 
             for (int i = 0; i < idx; i++)
